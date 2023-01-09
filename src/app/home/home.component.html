@@ -1,0 +1,247 @@
+<app-header></app-header>
+<div class="home-contianer">
+  
+ <div class="all-movies">
+    
+     <div class="trending-movies">
+          
+        <div class="top">
+                <h4>Trending-Movies</h4>
+                <div class="view-all">View All</div>
+            </div>
+            <div class="movie-thumbnail">
+                <div class="movie" *ngFor="let movie of trendingMovies">
+                    <div class="cover">
+                        <img [src]="movie.cover" alt=""></div>
+                        <div class="details">
+                        <div class="name"> 
+                               {{movie.name}}</div>
+                             <div class="rating"><i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>{{movie.rating}}</div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <!-- <div class="popular-movies"> -->
+            <!-- <div class="all-movies">  -->
+                <div class="theatre-movies">
+                    <div class="top">
+                        <h4>Popular-movies on theatre</h4>
+                         <div class="view-all">View All</div>
+                    </div> 
+                    <div class="movie-thumbnail">
+                        <div class="movies" *ngFor="let movie of TheatreMovies">
+                            <div class="cover">
+                                <img [src]="movie.cover" alt=""></div>
+                                
+                                <div class="details">
+                                <div class="name">{{movie.name}}</div>
+                               <div class="rating"><i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                {{movie.rating}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Popular-movies">
+                    <div class="top">
+                        <h4>Popular-movies</h4>
+                         <div class="view-all">View All</div>
+                    </div> 
+                    <div class="movie-thumbnail">
+                        <div class="item" *ngFor="let movie of PopularMovies">
+                                <img [src]="movie.cover" alt="">
+                               
+                            <div class="cover">
+                            </div>
+                            <div class="details">
+
+                                <div class="rating"> 
+                                  <div class="name">{{movie.name}}</div>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-sharp fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                 {{movie.rating}} </div>
+                                
+                               
+                               
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+     </div>
+</div>
+<!-- Footer -->
+<footer class="bg-dark text-center text-white " >
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+            MyMovies app Video, also known simply as Prime Video, is an indinn subscription video on-demand
+             over-the-top streaming and rental service of Myapp offered as a standalone service or as part of
+              Amazon's Prime subscription. The service primarily distributes films and television series 
+              produced by MyMovies Studios and MGM Holdings or licensed to MyMovies, as MyMovies Originals, with 
+              the service also hosting content from other providers, 
+            content add-ons, live sporting events, and video rental and purchasing services
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">FAQ</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Privacy</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Spped Test</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Investor Link</a>
+              </li>
+             
+            </ul>
+          </div>
+         
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">HELP CENTER</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Jobs</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Legal Notices</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Cookie Preferences</a>
+              </li>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Account</h5>
+  
+            <ul class="list-unstyled ">
+              <li>
+                <a href="#" class="text-white ">Ways to Watch</a>
+              </li>
+              <li>
+                <a href="#" class="text-white ">Corporate Information</a>
+              </li>
+              <li>
+                <a href="#" class="text-white ">Only on Netflix</a>
+              </li>
+              <li>
+                <a href="#" class="text-white ">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(228, 0, 0, 0.893);">
+      © 2020 Copyright:
+      <a class="text-white" href="#">MyMovies</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  
+  

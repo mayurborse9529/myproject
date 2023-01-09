@@ -1,0 +1,36 @@
+
+<div class="login-container">
+    <div class="logo">MyMovies</div>
+    <div class="desc">
+    
+        MyMovies app Video, also known simply as Prime Video, is an indinn 
+        subscription video on-demand over-the-top streaming and rental service of Myapp
+         offered as a standalone service or as part of Amazon's Prime subscription.
+          The service primarily distributes films and television series produced by 
+          MyMovies Studios and MGM Holdings or licensed to MyMovies, as MyMovies Originals,
+           with the service also hosting content from other providers, content add-ons,
+         live sporting events, 
+        and video rental and purchasing services
+    
+    </div>
+    <div class="film"> <img src="../assets/film_real-removebg-preview.png" alt="" width="500px " height="500px">
+    
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">UserName</label>
+            <input type="text" name="uname" class="form-control"  [(ngModel)]="username">
+        </div>
+        <div class="form-group">
+            <label for="pword">Password</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password">
+        </div>
+            <div class="btn-container">
+                <div class="error">{{errorMsg}}</div>
+                <button class="btn btn-danger" (click)="login()">Login</button>
+            </div>
+           
+            
+        </div>
+    </div>
+    
+    
